@@ -9,7 +9,7 @@ tags: [GitHub Pages, Personal Website]
 ---
 Every day counts.
 
-I always wanted to create a personal website when I was still at campus. But back then I was saying to myself "you are too busy". This year, since january, except for two months in Chongqing, life became boring and I wasted it. Finally, it is time to create my website, in this 6 square-meter room.
+I always wanted to create a personal website when I was still at campus. But back then I was saying to myself "you are too busy". This year, since january, except for two months in Chongqing, life became boring. Finally, it is time to create my website, in this 6 square-meter room.
 
 大学还没有毕业的时候，就有建立个人网站的想法。那时候总是觉得自己太忙，结果今年自1月以来，除开暑假在重庆上了两个月的班，时间总是很充裕，却也被荒废掉。最终在这6平米的地方迈开了自己建站的第一步。
 
