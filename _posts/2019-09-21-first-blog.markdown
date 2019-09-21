@@ -13,21 +13,42 @@ Every day counts.
 
 做的更像是个人网页而非个人网站，暂时还是托管在GitHub上，受到了GitHub每月10万流量的限制。
 
+---
+
 ## Step 1: 创建 GitHub Pages
-首先注册个GitHub，创建repository。注意，rep必须命名为"username.github.io"，这里我的username是stop68。
 
-之后，在repo的settings里找到GitHub Pages的选项，默认应该是启动的。可以勾选"Change Theme"找一些GitHub默认的模板。GitHub自带的是Jekyll，在我看来是框架，自称是"简单静态博客网站生成器"，也可以到知乎或GitHub搜一些Jekyll的框架。
+这一步推荐参考： [创建 GitHub Pages](https://zhuanlan.zhihu.com/p/58229299)
 
-这之后，你应该用以下域名登录到自己的GitHub Pages了。记得把username换成自己的用户名。
+首先注册个GitHub，创建repository。注意，repo必须命名为"username.github.io"，这里我的username是stop68。
+
+![创建 GitHub Pages]({{site.baseurl}}/assets/img/y190921/a1.jpg)
+
+在repo的settings里找到GitHub Pages的选项，默认应该是启动的。可以勾选"Change Theme"找一些GitHub默认的模板。GitHub自带的是Jekyll，在我看来是框架，自称是"简单静态博客网站生成器"。
+
+也可以到知乎或GitHub搜一些Jekyll的框架，folk后把他们命名为"username.github.io"。
+
+完成后，你应该可以用以下域名登录到自己的GitHub Pages了，记得把username换成自己的用户名。
 
 >username.github.io
 
-## Step 0: How to Git
-搜索到这些Jekyll模板后，需要更改成自己的网站。理论上可以通过"download as zip"，解压再创建新的repo来进行。
+---
+## Step 2: How to Git
 
-真的好麻烦。
+学会Git能方便很多，打码总是舒服的。
 
-学会Git能方便很多，打码总是舒服的。首先，下载安装Git这个软件。成功以后，应该能在cmd下执行git的命令。选择自己所用的
+首先，下载安装Git这个软件。成功以后，应该能在cmd下执行git的命令。
 
-搜到的合适的框架，选
+第二，在本地电脑选择一个文件夹作为以后存放个人网页的地方，执行以下命令，记得把两个username换成自己的。
+
+  ```
+  git clone https://github.com/username/username.github.io
+  ```
+
+现在，我就是在本地更新网页，然后再执行以下命令，push回GitHub上，注意comments部分是注释。
+
+  ```
+  git add . 
+  git commit -m "comments" 
+  git push origin master 
+  ```
 
