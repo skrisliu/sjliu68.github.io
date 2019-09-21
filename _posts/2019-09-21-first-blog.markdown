@@ -9,6 +9,8 @@ tags: [GitHub Pages, Personal Website]
 ---
 Every day counts.
 
+I always wanted to create a personal website when I was still at campus. But back then I was saying to myself "you are too busy". This year, since january, except for two months in Chongqing, life became boring and I wasted it. Finally, it is time to create my website, in this 6 square-meter room.
+
 大学还没有毕业的时候，就有建立个人网站的想法。那时候总是觉得自己太忙，结果今年自1月以来，除开暑假在重庆上了两个月的班，时间总是很充裕，却也被荒废掉。最终在这6平米的地方迈开了自己建站的第一步。
 
 做的更像是个人网页而非个人网站，暂时还是托管在GitHub上，受GitHub每月10万流量的限制。有大流量需求的还是得买个托管服务器。
@@ -64,6 +66,7 @@ Every day counts.
       
   >li.feifei.xyz
 
+---
 ## Step 4: Link GitHub Pages with Your Domain
 首先，在域名代理商里找到设置CNAME的地方。按照图示，设置4个Record，1个CNAME Record。
 
@@ -72,4 +75,3 @@ Every day counts.
 ![Link GitHub Pages and Your Domain]({{site.baseurl}}/assets/img/y190921/a3.jpg)
 
 最后在GitHub Pages的设置里，找到Custom domain，修改为自己的网址，就完成了。
-
