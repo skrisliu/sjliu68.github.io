@@ -7,13 +7,9 @@ layout: main
             <h2 id="about">About me</h2>
             <p>{{site.about-author}}</p>
             <h2 id="news">News</h2>
-            <p>{{site.about-news}}</p>
+            <p>{{site.news}}</p>
             <h1 id="articles">Articles</h2>
         </section>
-          <div class="post-content">
-            <h2 class="post-title"><a href="{{site.news | prepend: site.baseurl}}">News</a></h2>
-            <p>{{ post.content }}</p>
-          </div>
 </article>
 {% for post in paginator.posts %}
 <article class="post">
