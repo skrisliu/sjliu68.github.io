@@ -16,11 +16,9 @@ Every day counts.
 ## Step 1: 创建 GitHub Pages
 首先注册个GitHub，创建repository。注意，rep必须命名为"username.github.io"，这里我的username是stop68。
 
-![创建个人repo]({{site.baseurl}}/assets/img/y190921/a1.jpg)
-
 之后，在repo的settings里找到GitHub Pages的选项，默认应该是启动的。可以勾选"Change Theme"找一些GitHub默认的模板。GitHub自带的是Jekyll，在我看来是框架，自称是"简单静态博客网站生成器"，也可以到知乎或GitHub搜一些Jekyll的框架。
 
-这之后，你应该用以下网站登录到自己的GitHub Pages了。记得把username换成自己的用户名。
+这之后，你应该用以下域名登录到自己的GitHub Pages了。记得把username换成自己的用户名。
 
 >username.github.io
 
