@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My First Blog: Create Personal Website with GitHub Pages
+title: My First Blog - Create Personal Website with GitHub Pages
 date: 2019-09-21 09:46:34 +0300
 description: Teach you how to create personal website in 30 minutes. # Add post description (optional)
 img: rainbow.jpg # Add image post (optional)
