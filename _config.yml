@@ -11,16 +11,16 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Shengjie Liu # add your name
 author-img: sj.jpg # add your photo
-about-author: "<p><strong>I am looking for a PhD position starting from Fall 2020.</strong></p>
-I am a machine learning and remote sensing researcher. I graduated from Sun Yat-sen University in June 2019. 
-My thesis was about using deep learning to generate beautiful maps with satellite data and limited training samples, supervised by Dr. Qian Shi. 
-I was a Remote Sensing Engineer at OneSpace Technology, where I developed new models for crop classification and PM2.5 estimation. 
-<p>I will join <a href='http://nightsky.physics.hku.hk'>the HKU Light Pollution ECF Team</a> in the coming year to study the condition of light pollution in Hong Kong.</p>"
-news: "<p><strong>July 2019: </strong> I started working at OneSpace Technology in Chongqing as a Remote Sensing Engineer. </p>
-  <p><strong>June 2019: </strong> I received my bachelor's degree in Geographical Information Science from Sun Yat-sen University in Guangzhou.</p>
+about-author: "<p><strong>I am looking for a PhD position in Fall 2020.</strong></p>
+I am a machine learning and remote sensing researcher. I graduated from <a href='http://sysu.edu.cn/2012/en/index.htm'>Sun Yat-sen University</a> in June 2019. 
+My thesis was about using deep learning to generate precise and beautiful maps with satellite data and limited labeled samples, supervised by <a href='http://gp.sysu.edu.cn/zh-hans/teacher/2789'>Dr. Qian Shi</a>. 
+
+news: "<p><strong>October 2019: </strong> I joined <a href='http://nightsky.physics.hku.hk'>the HKU Light Pollution ECF Team</a> as a Research Assistant at The University of Hong Kong.</p>
+  <p><strong>July 2019: </strong> I started working at <a href='https://www.linkedin.com/company/onespacechina/'>OneSpace Technology</a> in Chongqing as a Remote Sensing Engineer. </p>
+  <p><strong>June 2019: </strong> I received my bachelor's degree in Geographical Information Science from <a href='http://sysu.edu.cn/2012/en/index.htm'>Sun Yat-sen University</a> in Guangzhou.</p>
   <p><strong>March 2019: </strong> Our journal paper on <a href='https://doi.org/10.3390/rs11060690'>land use and land cover mapping by integrating object-based regularization and ConvNets using optical and PolSAR data</a> was available online.</p>
-  <p><strong>February 2019: </strong> We achieved top 2% (18/1329) in preliminary and top 3% (29/1329) in semifinal in the Alibaba Cloud German AI Challenge 2018 for Remote Sensing Scene Classification of Local Climate Zones.</p>
-  <p><strong>March 2018: </strong> Our work about using active learning to reduce the need of labeled samples for remote sensing image classification was accepted to IGARSS 2018.</p>"
+  <p><strong>February 2019: </strong> We achieved top 2% (18/1329) in preliminary and top 3% (29/1329) in semifinal in the <a href='https://tianchi.aliyun.com/competition/entrance/231683/introduction'>Alibaba Cloud German AI Challenge 2018 for Remote Sensing Scene Classification of Local Climate Zones.</p>
+  <p><strong>March 2018: </strong> <a href='https://doi.org/10.1109/IGARSS.2018.8517855'>Our work about using active learning to reduce the need of labeled samples for remote sensing image classification</a> was accepted to IGARSS 2018.</p>"
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: stop68 # add your Github handle
