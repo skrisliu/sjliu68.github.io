@@ -33,6 +33,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-maps
 
 paginate: 1
 paginate_path: "/page/:num"

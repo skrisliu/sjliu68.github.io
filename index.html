@@ -20,8 +20,41 @@ layout: main
 			<p><strong>March 2018: </strong> 
 			Our work about using <a href='https://doi.org/10.1109/IGARSS.2018.8517855'>active learning to reduce the need of labeled samples for remote sensing image classification</a> was accepted to IGARSS 2018.</p>
 			</p>
-            <h1 id="articles">Posts</h1>
         </section>
+</article>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/build/ol.js"></script>
+    <title>OpenLayers example</title>
+  </head>
+  <body>
+    <h2>Hong Kong</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([114, 22.3]),
+          zoom: 10
+        })
+      });
+    </script>
+  </body>
+</html>
+<article>
+  <h1 id="posts">Posts</h1>
 </article>
 {% for post in paginator.posts %}
 <article class="post">
@@ -38,4 +71,4 @@ layout: main
 </article>
 {% endfor %}
 
-{% include pagination.html %}
+<!--{% include pagination.html %}-->
