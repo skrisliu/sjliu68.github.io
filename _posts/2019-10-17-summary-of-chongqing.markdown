@@ -3,8 +3,8 @@ layout: post
 title: Summary of Chongqing
 date: 2019-10-17 20:00:00 +0800
 description:  How was the life in Chongqing?
-img: chongqing_train.jpg# Add image post (optional)
-fig-caption: # Add figcaption (optional)
+img: # Add image post (optional)
+fig-caption: chongqing_train.jpg# Add figcaption (optional)
 tags: [Life, Chongqing]
 ---
 My last year in campus was really a mess. When I finished defending my thesis in May, I had zero desirable offers.  So when the HR of OneSpace Technology (*零壹空间*) called me that morning, I was thrilled. We had quite a chat and she mentioned that she was also graduated from Sun Yat-sen Univ. At that time I was actually offered a job as remote sensing engineer in some public institution where they offered, let's say not a very satisfactory salary, and the last thing I want to do is to stay in a state-owned institution considering what happened in SYSU. I told them I had an offer from a state-owned institution and it would be better for them to arrange the next round interview quickly. 
