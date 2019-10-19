@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two Weeks in Chongqing
+title: Two Months in Chongqing
 date: 2019-10-17 20:00:00 +0800
 description:  How was the life in Chongqing?
 img: chongqing-train.jpg # Add image post (optional)
