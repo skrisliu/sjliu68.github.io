@@ -22,19 +22,26 @@ layout: main
 			</p>
         </section>
 </article>
-
-
-<article>
-<section>
-<h2><p>Hong Kong</p></h2>
-</section>
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 150 | divided_by: 150 | append: " minute read" }}{% endunless %}</span>
+  </div>
 </article>
+{% endfor %}
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.1/css/ol.css" type="text/css">
     <style>
       .map {
-        height: 300px;
+        height: 400px;
         width: 100%;
       }
     </style>
@@ -59,25 +66,4 @@ layout: main
     </script>
   </body>
 </html>
-
-<article>
-<section>
-<p><h2>Posts</h2></p>
-</section>
-<article>
-{% for post in paginator.posts %}
-<article class="post">
-  {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-  {% else %}
-  {% endif %}
-  <div class="post-content">
-    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 150 | divided_by: 150 | append: " minute read" }}{% endunless %}</span>
-  </div>
-</article>
-{% endfor %}
-
 <!--{% include pagination.html %}-->
