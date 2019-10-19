@@ -19,11 +19,13 @@ Back to the interview, it was the first time I met ZHOU Liang (*周亮*), the te
 
 ## First impression of Chongqing
 
-![I and My friends]({{site.baseurl}}/assets/img/chongqing_train.jpg)
 
 My father insisted to go to Chongqing with me. We took an early flight on July 4 from Zhuhai. It was not the first time I came here. I was in Chongqing for two days last year as a traveller. 
 
 The company was really far from the downtown. It took almost one hour to there. 
+
+<!-- ![I and My friends]({{site.baseurl}}/assets/img/chongqing_train.jpg) -->
+
 
 ...
 
