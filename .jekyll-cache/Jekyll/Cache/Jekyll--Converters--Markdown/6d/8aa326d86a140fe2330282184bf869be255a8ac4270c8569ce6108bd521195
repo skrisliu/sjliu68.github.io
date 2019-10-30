@@ -1,0 +1,101 @@
+I""<h1 id="introduction">Introduction</h1>
+
+<p>Modern JavaScript works best when using and authoring modules. The recommended way of using OpenLayers is installing the <a href="https://npmjs.com/package/ol"><code class="highlighter-rouge">ol</code></a> package. This tutorial walks you through setting up a simple dev environment, which requires <a href="https://nodejs.org">node</a> for everything to work.</p>
+
+<p>In this tutorial, we will be using <a href="https://parceljs.org">Parcel</a> to bundle our application. There are several other options, some of which are linked from the <a href="https://npmjs.com/package/ol">README</a>.</p>
+
+<h2 id="initial-steps">Initial steps</h2>
+
+<p>Create a new empty directory for your project and navigate to it by running <code class="highlighter-rouge">mkdir new-project &amp;&amp; cd new-project</code>. Initialize your project with</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm init
+</code></pre></div></div>
+
+<p>This will create a <code class="highlighter-rouge">package.json</code> file in your working directory. Add OpenLayers as dependency to your application with</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install ol
+</code></pre></div></div>
+
+<p>At this point you can ask NPM to add required development dependencies by running</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save-dev parcel-bundler
+</code></pre></div></div>
+
+<h2 id="application-code-and-indexhtml">Application code and index.html</h2>
+
+<p>Place your application code in <code class="highlighter-rouge">index.js</code>. Here is a simple starting point:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="dl">'</span><span class="s1">ol/ol.css</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nb">Map</span><span class="p">,</span> <span class="nx">View</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ol</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">TileLayer</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ol/layer/Tile</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">OSM</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ol/source/OSM</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Map</span><span class="p">({</span>
+  <span class="na">target</span><span class="p">:</span> <span class="dl">'</span><span class="s1">map</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">layers</span><span class="p">:</span> <span class="p">[</span>
+    <span class="k">new</span> <span class="nx">TileLayer</span><span class="p">({</span>
+      <span class="na">source</span><span class="p">:</span> <span class="k">new</span> <span class="nx">OSM</span><span class="p">()</span>
+    <span class="p">})</span>
+  <span class="p">],</span>
+  <span class="na">view</span><span class="p">:</span> <span class="k">new</span> <span class="nx">View</span><span class="p">({</span>
+    <span class="na">center</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="na">zoom</span><span class="p">:</span> <span class="mi">0</span>
+  <span class="p">})</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>You will also need an <code class="highlighter-rouge">index.html</code> file that will use your bundle. Here is a simple example:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Using Parcel with OpenLayers<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;style&gt;</span>
+      <span class="nf">#map</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">250px</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"map"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"./index.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="creating-a-bundle">Creating a bundle</h2>
+
+<p>With two additional lines in <code class="highlighter-rouge">package.json</code> you can introduce the commands <code class="highlighter-rouge">npm run build</code> and <code class="highlighter-rouge">npm start</code> to manually build your bundle and watch for changes, respectively. The final <code class="highlighter-rouge">package.json</code> with the two additional commands <code class="highlighter-rouge">"start"</code> and <code class="highlighter-rouge">"build"</code> should look like this:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"main"</span><span class="p">:</span><span class="w"> </span><span class="s2">"index.js"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo </span><span class="se">\"</span><span class="s2">Error: no test specified</span><span class="se">\"</span><span class="s2"> &amp;&amp; exit 1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"parcel index.html"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"build"</span><span class="p">:</span><span class="w"> </span><span class="s2">"parcel build --public-url . index.html"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"license"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ISC"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>That’s it. Now to run your application, enter</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
+</code></pre></div></div>
+
+<p>in your console. To test your application, open http://localhost:1234/ in your browser. Whenever you change something, the page will reload automatically to show the result of your changes.</p>
+
+<p>Note that a single JavaScript file with all your application code and all dependencies used in your application has been created. From the OpenLayers package, it only contains the required components.</p>
+
+<p>To create a production bundle of your application, simply type</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
+</code></pre></div></div>
+
+<p>and copy the <code class="highlighter-rouge">dist/</code> folder to your production server.</p>
+:ET
