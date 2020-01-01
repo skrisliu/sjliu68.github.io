@@ -3,22 +3,23 @@ description: > # this means to ignore newlines until "baseurl:"
   You can find about my research and life here.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://shengjie.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sjliu.me" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Shengjie Liu # add your name
 author-img: sj.jpg # add your photo
-about-author: "I received my BSc degree from <a href='http://sysu.edu.cn/2012/en/index.htm'>Sun Yat-sen U</a> in June 2019. 
+about-author: "I am a research assistant at the <a href='https://www.hku.hk'>University of Hong Kong</a> studying light pollution using remote sensing techniques.
+I received my BSc degree from Sun Yat-sen U in June 2019. 
 During my four-year undergraduate study, I have developed an interest in remote sensing and machine learning. 
 Specifically, I use state-of-the-art techniques and satellite data to monitor the Earth environment. 
-My thesis was about using deep learning to generate precise and beautiful maps with multisource satellite data under the condition of very few samples. My advisors were <a href='https://scholar.google.com/citations?hl=zh-CN&user=tUe4JDoAAAAJ'>Dr Qian Shi</a> and <a href='https://scholar.google.com/citations?user=GBTF4cgAAAAJ&hl=zh-CN&oi=ao'>Dr Zhixin Qi</a>. "
+My thesis was about using deep learning to generate precise and beautiful maps with multisource satellite data under the condition of very few samples."
 news: ""
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: stop68 # add your Github handle
 social-linkedin: shengjie-liu-2696a1b2 # add your Linkedin handle
-social-email: liushengjie0756@gmail.com # add your Email address
+social-email: sjliu.me@gmail.com # add your Email address
 
 # Disqus
 discus-identifier: # mr-brown # add your discus identifier
