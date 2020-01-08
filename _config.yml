@@ -9,11 +9,9 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Shengjie Liu # add your name
 author-img: sj.jpg # add your photo
-about-author: "I am a research assistant at the <a href='https://www.hku.hk'>University of Hong Kong</a> studying light pollution using remote sensing techniques.
-I received my BSc degree from Sun Yat-sen U in June 2019. 
-During my four-year undergraduate study, I have developed an interest in remote sensing and machine learning. 
-Specifically, I use state-of-the-art techniques and satellite data to monitor the Earth environment. 
-My thesis was about using deep learning to generate precise and beautiful maps with multisource satellite data under the condition of very few samples."
+about-author: "I am a research assistant at the <a href='https://www.hku.hk'>University of Hong Kong</a> studying light pollution.
+I received my bachelor's degree from Sun Yat-sen U in June 2019. During the four-year undergraduate study, I have developed an interest in remote sensing and machine learning.
+Recent research interests include few-shot learning and multitask learning for satellite image classification."
 news: ""
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
