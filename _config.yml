@@ -12,7 +12,7 @@ author-img: sj.jpg # add your photo
 about-author: "I am a research assistant at the <a href='https://www.hku.hk'>University of Hong Kong</a>. 
 My research focuses on using machine/deep learning to interpret satellite images and extract useful information.
 Some of the applications are land use classification, local climate zone mapping and PM2.5 estimation.
-The techniques used here include active learning, multitask learning and multisource data fusion. 
+The techniques used include active learning, multitask learning and multisource data fusion. 
 Recent research interests are deep few-shot learning for satellite image classification."
 news: ""
 social-twitter: # add your Twitter handle
