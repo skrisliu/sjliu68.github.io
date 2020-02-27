@@ -7,7 +7,7 @@
 {% include _head.html %}
 </head>
 
-<body class="post">
+<body class="page">
 
 {% include _browser-upgrade.html %}
 
@@ -35,28 +35,15 @@
     {% include _author-bio.html %}
   </div>
   <article>
-    <div class="headline-wrap">
-      {% if page.link %}
-        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
-      {% else %}
-        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-      {% endif %}
-    </div><!--/ .headline-wrap -->
+    <h1>{{ page.title }}</h1>
     <div class="article-wrap">
       {{ content }}
-      <hr />
-      <footer role="contentinfo">
-        <div class="article-author-bottom">
-          {% include _author-bio.html %}
-        </div>
-        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <a href="{{ site.url }}" title="About {{ site.owner.name }}">{{ site.owner.name }}</a>.</p>
-      </footer>
     </div><!-- /.article-wrap -->
-  {% if site.disqus_shortname and page.comments %}
-    <section id="disqus_thread"></section><!-- /#disqus_thread -->
-  {% endif %}
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
   </article>
-</div><!-- /#main -->
+</div><!-- /#index -->
 
 <div class="footer-wrap">
   <footer>
@@ -64,7 +51,7 @@
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
 </html>

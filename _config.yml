@@ -1,41 +1,64 @@
 title: Shengjie Liu
-description: > # this means to ignore newlines until "baseurl:"
-  Sims 2020: Hong Kong
-permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sjliu.me" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+description:      Welcome to my site.
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:    https://sjliu.me          //stop68.github.io
+#http://localhost:5000
+#https://www.stop68.github.io
+#disqus_shortname: sjliu
 
-# Author Settings
-author: Shengjie Liu # add your name
-author-img: sj.jpg # add your photo
-about-author: "I am a research assistant at the <a href='https://www.hku.hk'>University of Hong Kong</a>. 
-My research focuses on using machine/deep learning to interpret satellite images and extract useful information.
-Some of the applications are land use classification, PM2.5 estimation and light pollution.
-The techniques used include deep learning, few-shot learning and multisource data fusion. 
-Recent research interests are transfer learning for satellite image classification."
-news: ""
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github: stop68 # add your Github handle
-social-linkedin: shengjie-liu-2696a1b2 # add your Linkedin handle
-social-email: sjliu.me@gmail.com # add your Email address
+# Owner/author information
+owner:
+  name:           Shengjie Liu
+  avatar:         sjliu.jpg
+  bio:            Research Assistant at HKU Physics
+  location:       Hong Kong
+  email:          sjliu.me@gmail.com
 
-# Disqus
-discus-identifier: # mr-brown # add your discus identifier
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  #twitter: ardasnck
+  linkedin: shengjie-liu-2696a1b2
+  #google_scholar: VCBBx24AAAAJ
+#  google_plus: 113718226018314522413
+  github: stop68
+# Analytics and webmaster tools stuff goes here
+#google_analytics: UA-52736040-1
+#google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-# Tracker
-analytics: # Google Analytics
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Projects
+    url: /project/
+  - title: Contact
+    url: /contact/
 
-# Build Settings
-markdown: kramdown
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
-  - jekyll-maps
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#timezone:    Asia/Hong_Kong
+#future:      true
+#pygments:    true
+highlighter: rouge
+markdown:    kramdown
+kramdown:
+  extensions: ["strikethrough"]
 
-paginate: 10
-paginate_path: "/page/:num"
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
