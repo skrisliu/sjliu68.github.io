@@ -13,16 +13,13 @@ My thesis was about land cover mapping using deep learning, with methods includi
 
 **Recent activities**
 
-* **15 April 2020: One paper about local climate zone mapping is accepted by ISPRS Journal of Photogrammetry and Remote Sensing!**<br>
-Local Climate Zone Mapping as Remote Sensing Scene Classification Using Deep Learning: A Case Study of Metropolitan China<br>
-Check out the local climate zone project <a href="https://sjliu.me/lcz">here</a>!
+* **15 April 2020**: One paper entitled "Local Climate Zone Mapping as Remote Sensing Scene Classification Using Deep Learning: A Case Study of Metropolitan China" is accepted by ISPRS Journal of Photogrammetry and Remote Sensing! Check out the local climate zone project <a href="https://sjliu.me/lcz">here</a>!
 
 * **24 December 2019: One paper (coauthered with Dr Qian Shi) is accepted by IEEE GRSL!**<br>
-<a href="https://ieeexplore.ieee.org/document/8954933">Multitask Deep Learning for Hyperspectral Image Classification</a><br>
-We developed a multitask network to utilize samples from multiple datasets to enhance network's generalization for hyperspectral image classification.
+<a href="https://ieeexplore.ieee.org/document/8954933">Multitask Deep Learning With Spectral Knowledge for Hyperspectral Image Classification</a><br>
 
 * **November 2019: I won the second prize (5000 CNY) in a paper contest** <br>
-<a href="https://mp.weixin.qq.com/s?src=11&timestamp=1582769326&ver=2183&signature=7LdiEOsIlsCX0D-VAjeipqG6Rc4-yAoIYyx6qZQLSHsse3WgGASA6JWcdWWu5s1oo3z7sXF07g499G*DdeyeczVOq4hesm49u5FBgZdnIdKOlOGz*FjjrmbTbgB3qPa7&new=1">The contest was hosted by Zhuhai Orbita Sci & Tech Co., Ltd.and Geomaticser (慧天地)</a>. In the paper, I developed a new method using neural networks and Zhuhai-1 hyperspectral data to estimate PM2.5 concentration. Code is available here. I also developed a python tool to convert raw Zhuhai-1 hyperspectral data to TOA reflectance.
+The contest was hosted by Zhuhai Orbita Sci & Tech Co., Ltd.and Geomaticser (慧天地). In the paper, I developed a new method using neural networks and Zhuhai-1 hyperspectral data to estimate PM2.5 concentration. Code is available here. I also developed a python tool to convert raw Zhuhai-1 hyperspectral data to TOA reflectance.
 
 * **March 2019: One paper is accepted by Remote Sensing**<br>
 <a href="https://doi.org/10.3390/rs11060690">Object-Based Post-classification Refinement with CNNs for Land Cover Mapping Using Optical and PolSAR data</a><br>
