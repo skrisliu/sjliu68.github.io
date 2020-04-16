@@ -13,6 +13,9 @@ My thesis was about land cover mapping using deep learning, with methods includi
 
 **Recent activities**
 
+* **15 April 2020: One paper about local climate zone mapping is accepted by ISPRS Journal of Photogrammetry and Remote Sensing!**<br>
+Local Climate Zone Mapping as Remote Sensing Scene Classification Using Deep Learning: A Case Study of Metropolitan China<br>
+
 * **24 December 2019: One paper (coauthered with Dr Qian Shi) is accepted by IEEE GRSL!**<br>
 <a href="https://ieeexplore.ieee.org/document/8954933">Multitask Deep Learning for Hyperspectral Image Classification</a><br>
 We developed a multitask network to utilize samples from multiple datasets to enhance network's generalization for hyperspectral image classification.
