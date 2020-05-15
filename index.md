@@ -1,19 +1,20 @@
 ---
 layout: home2
-description: "Shengjie Liu's website"
-tags: [Jekyll, theme, responsive, blog, template]
+description: "sjliu"
+tags: [sjliu, remote sensing, deep learning]
 ---
-I am currently a research assistant at The University of Hong Kong, studying night lights with my colleagues under the supervision of Dr JCS Pun. <a href="http://globeatnight-network.org">Check out the Globe-at-Night project!</a>
+I am currently a research assistant at The University of Hong Kong, studying night lights with my colleagues under the supervision of Dr Jason Pun. <a href="http://globeatnight-network.org">Check out the Globe-at-Night project!</a>
 <br>
 <br>
 Before HKU, I received my bachelor's degree from Sun Yat-sen University. I've developed an interest in remote sensing image classification in my four-year study.
-My thesis was about land cover mapping using deep learning, with methods including optical-PolSAR fusion, active learning and transfer learning.
+My thesis was about land cover mapping using deep learning, with methods including optical-PolSAR fusion, active learning, and transfer learning.
 
 <br>
 
 **Recent activities**
 
-* **15 April 2020**: One paper entitled "Local Climate Zone Mapping as Remote Sensing Scene Classification Using Deep Learning: A Case Study of Metropolitan China" is accepted by ISPRS Journal of Photogrammetry and Remote Sensing! Check out the local climate zone project <a href="https://sjliu.me/lcz">here</a>!
+* **15 April 2020**: One paper entitled "<a href="https://doi.org/10.1016/j.isprsjprs.2020.04.008">Local Climate Zone Mapping as Remote Sensing Scene Classification Using Deep Learning: A Case Study of Metropolitan China</a>" is accepted by ISPRS Journal of Photogrammetry and Remote Sensing! Check out the local climate zone project <a href="https://sjliu.me/lcz">here</a>! 
+
 
 * **24 December 2019: One paper (coauthered with Dr Qian Shi) is accepted by IEEE GRSL!**<br>
 <a href="https://ieeexplore.ieee.org/document/8954933">Multitask Deep Learning With Spectral Knowledge for Hyperspectral Image Classification</a><br>
