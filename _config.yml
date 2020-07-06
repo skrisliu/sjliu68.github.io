@@ -30,7 +30,7 @@ bing_verify:
 # For external links add external: true
 links:
   - title: Publications
-    url: /Publications/
+    url: /publications/
   - title: Contact
     url: /contact/
 
